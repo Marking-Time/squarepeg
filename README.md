@@ -1,1 +1,2 @@
 # squarepeg
+Square Peg blog 
