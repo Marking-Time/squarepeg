@@ -5,22 +5,57 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Square Peg</title>
 	<style>
+		.wrapper {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-areas: 
+				"a b b b b "
+				"c d d d d"
+			;
+		}
 		body {
 			background: url("assets/2mmlines.svg");
 			font-size: 20px;
 		}
 		header	{
+			display: grid;
+			grid-area: b;
+			justify-items: center;
+			align-items: center;
 			img {
 				height: 150px;
 			}
+			p{
+				margin: 0px;
+			}
+		}
+		.nav{
+			display: grid;
+			grid-area: c;
+
+		}
+		.content {
+			display: grid;
+			grid-area: d;
+			justify-items: center;
+
 		}
 	</style>
 </head>
 <body>
-	<header>
-		<img src="assets/squarepeg-text.svg" alt="square peg logo">
-	</header>
-	<p>This is some sample text.</p>
-	
+	<div class="wrapper">
+		<header>
+			<img src="assets/squarepeg-text.svg" alt="square peg logo">
+			<p>Mark King</p>
+			<p>https://github.com/Marking-Time</p>
+		</header>
+		<div class="nav">
+			<p>this is some nav text. this is some nav text. this is some nav text. this is some nav text. </p>
+		</div>
+		<div class="content">
+			<p>This is some sample text.</p>
+		</div>
+		
+	</div>
 </body>
 </html>
